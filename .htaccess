@@ -1,0 +1,6 @@
+# Turn on the rewrite engine
+RewriteEngine On
+
+# 1. Redirect the root domain (r2zone.in) to your target link
+RewriteCond %{HTTP_HOST} ^(www\.)?r2zone\.in$ [NC]
+RewriteRule ^(.*)$ http://r2zonevns-001-site1.ktempurl.com/r2zone/$1 [R=302,L]
