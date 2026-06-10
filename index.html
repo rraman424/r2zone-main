@@ -1,10 +1,27 @@
-<!-- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0; url=http://r2zonevns-001-site1.ktempurl.com/r2zone/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
+
+    <script>
+        (function() {
+            // Get the current domain name the user typed
+            var currentHost = window.location.hostname.toLowerCase();
+            
+            // Get any extra path paths (e.g., /about or /login) to pass along
+            var currentPath = window.location.pathname + window.location.search + window.location.hash;
+            // 2. Route for the Main Root Domain
+            else if (currentHost === "r2zone.in" || currentHost === "www.r2zone.in") {
+                window.location.href = "http://r2zonevns-001-site1.ktempurl.com/r2zone/" + currentPath;
+            }
+        })();
+    </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="http://r2zonevns-001-site1.ktempurl.com/r2zone/">click here</a>.</p>
+    <p style="text-align: center; margin-top: 50px; font-family: sans-serif;">
+        Redirecting you to the server, please wait...
+    </p>
 </body>
-</html> -->
+</html>
